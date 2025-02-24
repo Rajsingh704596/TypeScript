@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Compiled JavaScript files
+*.js
+*.js.map
+
+# Build folder
+dist/
+build/
+
+# Environment files
+.env
+
+# IDE/Editor files
+.vscode/
+.idea/
+
+# Logs and cache
+npm-debug.log*
+.cache/
