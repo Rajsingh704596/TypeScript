@@ -87,7 +87,7 @@ m=null;
 //^ Undefined- variable which has no value
 let u:undefined;
 
-//^ Never- when we use it, next code not execute. it's basically use for infinite loop, throw error (use case)
+//^ Never- where we define never type, next code not execute. it's basically use for infinite loop, throw error (use case)
 
 // function abcd():never{       
 //     while(true){}   //if while always true it's infinite loop

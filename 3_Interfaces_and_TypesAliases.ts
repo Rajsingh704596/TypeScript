@@ -22,7 +22,7 @@ getDataofUser({name:"rock",email:'rr',password:"ee"})
 
 
 
-//$2 Extending Interfaces -   
+//$ Extending Interfaces -   
 //here this e.g Admin have both Self property + User Property 
 interface Admin extends User{
           admin:boolean;
@@ -30,6 +30,10 @@ interface Admin extends User{
 
 function adminData(obj:Admin){
     // obj.admin
+    // obj.email
+    // obj.gender
+    // obj.name
+    // obj.password           // we can access this
 }
 
 
@@ -49,14 +53,14 @@ function mr(obj:abc){
 }
 
 
-//$ 3 Type Aliases - (self user define types)
+//$2 Type Aliases - (self user define types)
 
 // e.g.
 type sankhya = number;  //here we create custom type which name is sankhya and it's number type
 let sd:sankhya;     // now sd is number type    
 
 //e.g.
-type value = string | number | null;   // here we create type value which will be string/number/null  (union use)
+type value = string | number | null;   // here we create type value which will be string/number/null  (Union use)
 let cd:value;
 
 //e.g
@@ -77,15 +81,19 @@ type Users={
     email:string;
 }
 
-type Admins = User & {            // here intersection user that mean Admins have User type of data + self data
-    getDetails(user:string):void
+type Admins = Users & {            // here intersection user that mean Admins have User type of data + self data
+    getDetails(user:string):void    //method that does not return anything
 }
 
-function add(a:Admins){    
-    // a.getDetails
+function ad(a:Admins){     // so a have Admin and Users both property type
+     a.getDetails
+    // a.email
+    // a.name             // now we can access this 
+
 }
 
 
-//todo - Type use for create types merger, union, single type define.           Interface use for create object shape
+//todo - Key Diff. b/w -
+//*  'Type' use for create type's merger, union, single type define.    v/s   'Interface' use for create object shape
 
 

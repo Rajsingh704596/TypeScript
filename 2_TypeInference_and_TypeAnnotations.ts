@@ -1,7 +1,7 @@
-//Type Inference-   variable which we not give type, typescript automatic infer the value is which type.
+//$ 1. Type Inference-   variable which we not give type, typescript automatic infer the value is which type.
 let c=3;  
 
-//Type Annotations- where we defined type using : colon
+//$ 2. Type Annotations- where we defined type using : colon
 
 //(variable)
 let d:number;
