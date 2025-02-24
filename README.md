@@ -215,8 +215,8 @@ Nahi, TypeScript ko **local project** mein bhi install kiya ja sakta hai aur `np
 - Isko **globally** ya **locally** install karke use kiya ja sakta hai.
 - `npx` command ke through TypeScript ko local project mein use karna better option hai, kyunki ye project-specific hai aur global dependencies avoid karta hai.
 
-TypeScript seekhna aur use karna ek smart choice hai, khas kar jab aap large-scale projects par kaam kar rahe hain. 🚀
+
 
 ---
 
-# TypeScript
+
